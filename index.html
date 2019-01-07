@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Are you Red E</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	
+<div id="audio-container">
+	<div class="container" style="margin-left:20px;float: left;">
+		<div id="audio-image">
+			<img class="cover">
+		</div>
+		<div id="audio-player">
+			<div id="audio-info">
+				<span class="artist"></span> - <span class="title"></span>
+			</div>
+			<input id="volume" type="range" min="0" max="10" value="4">
+			<br>
+			<div id="buttons">
+				<span>
+					<button id="prev"></button>
+					<button id="play"></button>
+					<button id="pause"></button>
+					<button id="stop"></button>
+					<button id="next"></button>
+				</span>
+			</div>
+			<div class="clearfix"></div>
+			<div id="tracker">
+				<div id="progress-bar">
+				<span id="progress"></span>
+				</div>
+				<span id="duration"></span>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div id="options">
+			<div id="auto-playcheckbox">
+				<input type="checkbox" value="AutoPlay" id="autoplay">
+				<label for="auto-play">Auto Play</label>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="playlist" class="container" style="margin-right:20px;float: right;">
+		<h2>UP NEXT</h2>
+		<ul class="hidden"></ul>
+	</div>
+	<div id="bachata-pl" class="container" style="margin-right:20px;">
+		<h2>BACHATA</h2>
+		<ul class="hidden"></ul>
+	</div>
+	<div id="salsa-pl" class="container" style="margin-right:20px;">
+		<h2>SALSA</h2>
+		<ul class="hidden"></ul>
+	</div>
+</div>
+
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
